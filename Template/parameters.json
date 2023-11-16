@@ -1,0 +1,60 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": "20b0a401-9c50-453c-b6b4-06ff102eec4d"
+        },
+        "resourceGroupName": {
+            "value": "rg-fiapstore"
+        },
+        "name": {
+            "value": "webapp-fiapstore"
+        },
+        "location": {
+            "value": "Brazil South"
+        },
+        "hostingPlanName": {
+            "value": "ASP-rgfiapstore-8c68"
+        },
+        "serverFarmResourceGroup": {
+            "value": "rg-fiapstore"
+        },
+        "alwaysOn": {
+            "value": false
+        },
+        "ftpsState": {
+            "value": "FtpsOnly"
+        },
+        "sku": {
+            "value": "Free"
+        },
+        "skuCode": {
+            "value": "F1"
+        },
+        "numberOfWorkers": {
+            "value": "1"
+        },
+        "workerSize": {
+            "value": "0"
+        },
+        "workerSizeId": {
+            "value": "0"
+        },
+        "linuxFxVersion": {
+            "value": "DOCKER|acrfiapstore.azurecr.io/fiapstore:latest"
+        },
+        "dockerRegistryUrl": {
+            "value": "https://acrfiapstore.azurecr.io"
+        },
+        "dockerRegistryUsername": {
+            "value": "acrfiapstore"
+        },
+        "dockerRegistryPassword": {
+            "value": "IZkUdzWSSUSbzzsBPuptLhnwcgySsA8lGYDmeBV55/+ACRCDj7mS"
+        },
+        "dockerRegistryStartupCommand": {
+            "value": ""
+        }
+    }
+}
