@@ -17,3 +17,10 @@ jobs:
         with:
           username: talles2512
           password: ${{ secrets.DOCKER_ACCESS_TOKEN }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v5.0.0
+        with:
+          context: .
+          tags: talles2512/fiapstore:latest
+          push: true
